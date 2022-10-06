@@ -126,4 +126,92 @@ html {
         line-height: 30px;
         min-width: 274px;
     }
+
+    .shopImage {
+        grid-area: photo;
+    }
+
+    .shopCards {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .cardSubtitleLeft {
+        grid-area: left;
+        padding-left: 20px;
+
+        .orangeText {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #FF8139;
+            font-weight: 500;
+        }
+
+        .cardName {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        .cardCode {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    }
+
+    .cardSubtitleRight {
+        grid-area: right;
+        text-align: right;
+        padding-right: 20px;
+
+        .orangeText {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #999999;
+            font-weight: 500;
+        }
+
+        .cardName {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        .cardName::before {
+            content: url(/images/pricePic.svg);
+            padding-right: 10px;
+        }
+
+        .cardCode {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    }
+
+    .shopCard {
+        background-color: #EEEEEE;
+        min-width: 290px;
+        max-width: 290px;
+        border-radius: 25px;
+        display: grid;
+        margin-bottom: 80px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'photo photo'
+            'photo photo'
+            'photo photo'
+            'photo photo'
+            'left right'
+        ;
+
+    }
+
+
 }

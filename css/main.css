@@ -131,4 +131,76 @@ html {
   font-weight: 400;
   line-height: 30px;
   min-width: 274px;
+}
+.shopSection .shopImage {
+  grid-area: photo;
+}
+.shopSection .shopCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 40px;
+}
+.shopSection .cardSubtitleLeft {
+  grid-area: left;
+  padding-left: 20px;
+}
+.shopSection .cardSubtitleLeft .orangeText {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FF8139;
+  font-weight: 500;
+}
+.shopSection .cardSubtitleLeft .cardName {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.shopSection .cardSubtitleLeft .cardCode {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.shopSection .cardSubtitleRight {
+  grid-area: right;
+  text-align: right;
+  padding-right: 20px;
+}
+.shopSection .cardSubtitleRight .orangeText {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+}
+.shopSection .cardSubtitleRight .cardName {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.shopSection .cardSubtitleRight .cardName::before {
+  content: url(/images/pricePic.svg);
+  padding-right: 10px;
+}
+.shopSection .cardSubtitleRight .cardCode {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.shopSection .shopCard {
+  background-color: #EEEEEE;
+  min-width: 290px;
+  max-width: 290px;
+  border-radius: 25px;
+  display: grid;
+  margin-bottom: 80px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "photo photo" "photo photo" "photo photo" "photo photo" "left right";
 }/*# sourceMappingURL=main.css.map */
