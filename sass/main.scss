@@ -6,6 +6,18 @@ html {
     font-family: 'Inter', sans-serif;;
 }
 
+hr {
+        margin-top: 0;
+        margin-bottom: 0;
+        min-height: 2px;
+        background-color: #ccc9c9;
+        border-style: none;
+}
+
+a {
+    color: rgb(61, 61, 61);
+}
+
 .menuContainer {
     padding: 36px;
     display: flex;
@@ -216,16 +228,18 @@ html {
 
 }
 
-.horizontalLine {
-    margin-top: 0;
-    min-height: 4px;
-    background-color: #999999;
-    border-style: none;
-}
-
 .launchSection {
+    display: flex;
+    position: relative;
     margin-left: 32px;
     margin-right: 32px;
+
+    .launchImage img {
+        position: absolute;
+        max-height: 467px;
+        left: 222px;
+        bottom: 0px;
+    }
 
     .launchCard h3 {
         color: rgb(250, 65, 210);
@@ -264,3 +278,46 @@ html {
 
 }
 
+.footer {
+
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+
+    p {
+        font-size: 20px;
+        color: rgb(61, 61, 61);
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .footerItem {
+        display: flex;
+        gap: 25px;
+        font-size: 20px;
+    }
+
+    .footerNav {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .footerNavContainer h6{
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    .footerNavContainer ul {
+        list-style: none;
+        padding-left: 0;
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+    .footerBottom {
+        margin-top: 15px;
+    }
+}

@@ -13,6 +13,18 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 2px;
+  background-color: #ccc9c9;
+  border-style: none;
+}
+
+a {
+  color: rgb(61, 61, 61);
+}
+
 .menuContainer {
   padding: 36px;
   display: -webkit-box;
@@ -205,16 +217,19 @@ html {
   grid-template-areas: "photo photo" "photo photo" "photo photo" "photo photo" "left right";
 }
 
-.horizontalLine {
-  margin-top: 0;
-  min-height: 4px;
-  background-color: #999999;
-  border-style: none;
-}
-
 .launchSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   margin-left: 32px;
   margin-right: 32px;
+}
+.launchSection .launchImage img {
+  position: absolute;
+  max-height: 467px;
+  left: 222px;
+  bottom: 0px;
 }
 .launchSection .launchCard h3 {
   color: rgb(250, 65, 210);
@@ -245,4 +260,43 @@ html {
   border-color: #FF3998;
   border-width: 3px;
   margin-bottom: 60px;
+}
+
+.footer {
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+.footer p {
+  font-size: 20px;
+  color: rgb(61, 61, 61);
+  font-weight: 400;
+  line-height: 30px;
+}
+.footer .footerItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  font-size: 20px;
+}
+.footer .footerNav {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.footer .footerNavContainer h6 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.footer .footerNavContainer ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 40px;
+  font-size: 20px;
+}
+.footer .footerBottom {
+  margin-top: 15px;
 }/*# sourceMappingURL=main.css.map */
