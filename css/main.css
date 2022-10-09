@@ -38,6 +38,9 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.menuContainer .fullMenu {
+  display: none;
+}
 .menuContainer .burgerIcon {
   font-size: 30px;
   padding-top: 4px;
@@ -48,6 +51,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.heroSection .heroCard {
+  padding-left: 36px;
+  max-width: 274px;
+  min-height: 410px;
 }
 .heroSection .heroCard h3 {
   color: rgb(250, 65, 210);
@@ -78,17 +86,13 @@ a {
   border-width: 3px;
   margin-bottom: 60px;
 }
-.heroSection .heroCard {
-  position: relative;
-  padding-left: 36px;
-  max-width: 274px;
-  min-height: 410px;
+.heroSection .heroPicture {
+  overflow: hidden;
 }
 .heroSection .heroPicture img {
-  position: absolute;
-  max-height: 400px;
-  left: 222px;
-  top: 50px;
+  max-width: 420px;
+  margin-left: -70px;
+  margin-top: -50px;
 }
 
 .addSection {
@@ -108,6 +112,7 @@ a {
 }
 
 .shopSection {
+  max-width: 100%;
   margin-left: 32px;
   margin-right: 32px;
 }
@@ -156,6 +161,8 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 40px;
+  width: 110%;
+  overflow: hidden;
 }
 .shopSection .cardSubtitleLeft {
   grid-area: left;
@@ -221,15 +228,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  overflow: hidden;
   margin-left: 32px;
-  margin-right: 32px;
 }
 .launchSection .launchImage img {
-  position: absolute;
-  max-height: 467px;
-  left: 222px;
-  bottom: 0px;
+  min-height: 450px;
+  margin-top: 159px;
+  margin-bottom: -1px;
+  margin-left: -60px;
+}
+.launchSection .launchCard {
+  min-width: 70%;
 }
 .launchSection .launchCard h3 {
   color: rgb(250, 65, 210);
@@ -299,4 +308,24 @@ a {
 }
 .footer .footerBottom {
   margin-top: 15px;
+}
+
+@media (min-width: 1200px) {
+  .navTab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .fullMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navBurger {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
