@@ -82,7 +82,7 @@ a {
   border-radius: 50px;
   font-weight: 600;
   font-size: 20px;
-  border-color: #FF3998;
+  border-color: #ff3998;
   border-width: 3px;
   margin-bottom: 60px;
 }
@@ -96,8 +96,8 @@ a {
 }
 
 .addSection {
-  background-image: -webkit-gradient(linear, left top, right top, from(#FF3939), to(#FF8139));
-  background-image: linear-gradient(to right, #FF3939, #FF8139);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff3939), to(#ff8139));
+  background-image: linear-gradient(to right, #ff3939, #ff8139);
   padding-left: 32px;
   padding-top: 75px;
 }
@@ -125,6 +125,9 @@ a {
           align-items: center;
   gap: 20px 60px;
   margin-top: 50px;
+}
+.shopSection .imgNotDisplay {
+  display: none;
 }
 .shopSection .logoGrid img {
   max-width: 150px;
@@ -173,7 +176,7 @@ a {
   margin-bottom: 10px;
   font-size: 12px;
   text-transform: uppercase;
-  color: #FF8139;
+  color: #ff8139;
   font-weight: 500;
 }
 .shopSection .cardSubtitleLeft .cardName {
@@ -214,7 +217,7 @@ a {
   font-size: 18px;
 }
 .shopSection .shopCard {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   min-width: 290px;
   max-width: 290px;
   border-radius: 25px;
@@ -266,7 +269,7 @@ a {
   border-radius: 50px;
   font-weight: 600;
   font-size: 20px;
-  border-color: #FF3998;
+  border-color: #ff3998;
   border-width: 3px;
   margin-bottom: 60px;
 }
@@ -310,13 +313,11 @@ a {
   margin-top: 15px;
 }
 
-@media (min-width: 1200px) {
-  .navTab {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media (min-width: 1400px) {
+  .mainLogo {
+    padding-top: 8px;
   }
-  .fullMenu {
+  .navTab {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -325,7 +326,90 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .navBurger {
+  .navTab .fullMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navTab .fullMenu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 15px;
+    list-style: none;
+  }
+  .navTab .fullMenu li {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .navTab .fullMenu li .pink {
+    color: #ff3998;
+  }
+  .navTab .fullMenu li a {
+    text-decoration: none;
+  }
+  .navTab .navBurger {
     display: none;
+  }
+  .heroSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .heroSection .heroCard {
+    min-width: 50%;
+  }
+  .heroSection .heroCard h1 {
+    font-size: 96px;
+    margin-bottom: 5px;
+  }
+  .heroSection .heroCard p {
+    margin-bottom: 40px;
+  }
+  .heroSection .heroPicture img {
+    min-height: 519px;
+    min-width: 700px;
+    margin-top: 20px;
+  }
+  .addSection {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+  }
+  .shopSection {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .shopSection .logoGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 145px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .shopSection .logoGrid .imgNotDisplay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }/*# sourceMappingURL=main.css.map */

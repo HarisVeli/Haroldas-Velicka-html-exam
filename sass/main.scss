@@ -1,349 +1,428 @@
 @use "reset";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 
 html {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 hr {
-        margin-top: 0;
-        margin-bottom: 0;
-        min-height: 2px;
-        background-color: #ccc9c9;
-        border-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 2px;
+  background-color: #ccc9c9;
+  border-style: none;
 }
 
-
 a {
-    color: rgb(61, 61, 61);
+  color: rgb(61, 61, 61);
 }
 
 .menuContainer {
-    padding: 36px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  padding: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-    .fullMenu { 
-        display: none;
-    }
+  .fullMenu {
+    display: none;
+  }
 
-    .burgerIcon {
-        font-size: 30px;
-        padding-top: 4px;
-        color: #999999;
-    }
+  .burgerIcon {
+    font-size: 30px;
+    padding-top: 4px;
+    color: #999999;
+  }
 }
 
 .heroSection {
-    display: flex;   
-    
-    .heroCard {
-        padding-left: 36px;
-        max-width: 274px;
-        min-height: 410px;
-    }
+  display: flex;
 
-    .heroCard h3 {
-        color: rgb(250, 65, 210);
-        font-size: 16px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
+  .heroCard {
+    padding-left: 36px;
+    max-width: 274px;
+    min-height: 410px;
+  }
 
-    .heroCard h1 {
-        font-size: 48px;
-        min-width: 274px;
-        font-weight: 900;
-        margin-top: 0px;
-    }
+  .heroCard h3 {
+    color: rgb(250, 65, 210);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 
-    .heroCard p {
-        font-size: 20px;
-        color: grey;
-        font-weight: 400;
-        line-height: 30px;
-        min-width: 274px;
-    } 
+  .heroCard h1 {
+    font-size: 48px;
+    min-width: 274px;
+    font-weight: 900;
+    margin-top: 0px;
+  }
 
-    .heroCard .btn {
-        background-color: white;
-        padding: 25px 55px;
-        border-radius: 50px;
-        font-weight: 600;
-        font-size: 20px;
-        border-color: #FF3998;
-        border-width: 3px;
-        margin-bottom: 60px;
-    }
+  .heroCard p {
+    font-size: 20px;
+    color: grey;
+    font-weight: 400;
+    line-height: 30px;
+    min-width: 274px;
+  }
 
-    .heroPicture {
-        overflow: hidden;
-    }
+  .heroCard .btn {
+    background-color: white;
+    padding: 25px 55px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    border-color: #ff3998;
+    border-width: 3px;
+    margin-bottom: 60px;
+  }
 
-    .heroPicture img {
-        max-width: 420px;
-        margin-left: -70px;
-        margin-top: -50px;
-    }
+  .heroPicture {
+    overflow: hidden;
+  }
+
+  .heroPicture img {
+    max-width: 420px;
+    margin-left: -70px;
+    margin-top: -50px;
+  }
 }
 
 .addSection {
-    background-image: linear-gradient(to right, #FF3939, #FF8139);
-    padding-left: 32px;
-    padding-top: 75px;
+  background-image: linear-gradient(to right, #ff3939, #ff8139);
+  padding-left: 32px;
+  padding-top: 75px;
 
-    .sectionTitle {
-        font-size: 40px;
-        font-weight: 500;
-    }
+  .sectionTitle {
+    font-size: 40px;
+    font-weight: 500;
+  }
 
-    .addText {
-        font-size: 20px;
-        line-height: 25px;
-        padding-bottom: 38px;
-    }
+  .addText {
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 38px;
+  }
 }
 
 .shopSection {
-    max-width: 100%;
-    margin-left: 32px;
-    margin-right: 32px;
+  max-width: 100%;
+  margin-left: 32px;
+  margin-right: 32px;
 
-    .logoGrid {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        max-width: 1vh;
-        align-items: center;
-        gap: 20px 60px;
-        margin-top: 50px;
+  .logoGrid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    max-width: 1vh;
+    align-items: center;
+    gap: 20px 60px;
+    margin-top: 50px;
+  }
+
+  .imgNotDisplay {
+    display: none;
+  }
+
+  .logoGrid img {
+    max-width: 150px;
+  }
+
+  .sectionTitle {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .shopPharagraph {
+    font-size: 20px;
+    color: grey;
+    font-weight: 400;
+    line-height: 30px;
+    min-width: 274px;
+    margin-top: 0;
+  }
+
+  .shopPharagraph a {
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+    font-weight: 400;
+    line-height: 30px;
+    min-width: 274px;
+  }
+
+  .shopImage {
+    grid-area: photo;
+  }
+
+  .shopCards {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 110%;
+    overflow: hidden;
+  }
+
+  .cardSubtitleLeft {
+    grid-area: left;
+    padding-left: 20px;
+
+    .orangeText {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #ff8139;
+      font-weight: 500;
     }
 
-    .logoGrid img {
-        max-width: 150px;
+    .cardName {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 500;
     }
 
-    .sectionTitle {
-        font-size: 40px;
-        font-weight: 500;
-        margin-bottom: 15px;
+    .cardCode {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  }
+
+  .cardSubtitleRight {
+    grid-area: right;
+    text-align: right;
+    padding-right: 20px;
+
+    .orangeText {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #999999;
+      font-weight: 500;
     }
 
-    .shopPharagraph {
-        font-size: 20px;
-        color: grey;
-        font-weight: 400;
-        line-height: 30px;
-        min-width: 274px;
-        margin-top: 0;
+    .cardName {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 500;
     }
 
-    .shopPharagraph a {
-        font-size: 20px;
-        color: rgb(61, 61, 61);
-        font-weight: 400;
-        line-height: 30px;
-        min-width: 274px;
+    .cardName::before {
+      content: url(/images/pricePic.svg);
+      padding-right: 10px;
     }
 
-    .shopImage {
-        grid-area: photo;
+    .cardCode {
+      margin-top: 10px;
+      font-size: 18px;
     }
+  }
 
-    .shopCards {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-        width: 110%;
-        overflow: hidden;
-    }
-
-    .cardSubtitleLeft {
-        grid-area: left;
-        padding-left: 20px;
-
-        .orangeText {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 12px;
-            text-transform: uppercase;
-            color: #FF8139;
-            font-weight: 500;
-        }
-
-        .cardName {
-            font-size: 20px;
-            margin-top: 0;
-            margin-bottom: 0;
-            font-weight: 500;
-        }
-
-        .cardCode {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-    }
-
-    .cardSubtitleRight {
-        grid-area: right;
-        text-align: right;
-        padding-right: 20px;
-
-        .orangeText {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 12px;
-            text-transform: uppercase;
-            color: #999999;
-            font-weight: 500;
-        }
-
-        .cardName {
-            font-size: 20px;
-            margin-top: 0;
-            margin-bottom: 0;
-            font-weight: 500;
-        }
-
-        .cardName::before {
-            content: url(/images/pricePic.svg);
-            padding-right: 10px;
-        }
-
-        .cardCode {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-    }
-
-    .shopCard {
-        background-color: #EEEEEE;
-        min-width: 290px;
-        max-width: 290px;
-        border-radius: 25px;
-        display: grid;
-        margin-bottom: 80px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            'photo photo'
-            'photo photo'
-            'photo photo'
-            'photo photo'
-            'left right'
-        ;
-
-    }
-
-
+  .shopCard {
+    background-color: #eeeeee;
+    min-width: 290px;
+    max-width: 290px;
+    border-radius: 25px;
+    display: grid;
+    margin-bottom: 80px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "photo photo"
+      "photo photo"
+      "photo photo"
+      "photo photo"
+      "left right";
+  }
 }
 
 .launchSection {
-    display: flex;
-    overflow: hidden;
-    margin-left: 32px;
+  display: flex;
+  overflow: hidden;
+  margin-left: 32px;
 
-    .launchImage img {
-        min-height: 450px;
-        margin-top: 159px;
-        margin-bottom: -1px;
-        margin-left: -60px;
-    }
+  .launchImage img {
+    min-height: 450px;
+    margin-top: 159px;
+    margin-bottom: -1px;
+    margin-left: -60px;
+  }
 
-    .launchCard {
-        min-width: 70%;
-    }
+  .launchCard {
+    min-width: 70%;
+  }
 
-    .launchCard h3 {
-        color: rgb(250, 65, 210);
-        font-size: 16px;
-        margin-top: 60px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
+  .launchCard h3 {
+    color: rgb(250, 65, 210);
+    font-size: 16px;
+    margin-top: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 
-    .launchCard .launchTitle {
-        font-size: 56px;
-        max-width: 274px;
-        font-weight: 900;
-        margin-top: 0px;
-    }
+  .launchCard .launchTitle {
+    font-size: 56px;
+    max-width: 274px;
+    font-weight: 900;
+    margin-top: 0px;
+  }
 
-    .launchCard .launchText {
-        font-size: 20px;
-        color: rgb(61, 61, 61);
-        font-weight: 400;
-        line-height: 30px;
-        max-width: 207px;
-    }
+  .launchCard .launchText {
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 207px;
+  }
 
-    .launchCard .btn {
-        background-color: white;
-        padding: 25px 55px;
-        border-radius: 50px;
-        font-weight: 600;
-        font-size: 20px;
-        border-color: #FF3998;
-        border-width: 3px;
-        margin-bottom: 60px;
-    }
+  .launchCard .btn {
+    background-color: white;
+    padding: 25px 55px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    border-color: #ff3998;
+    border-width: 3px;
+    margin-bottom: 60px;
+  }
 }
 
 .footer {
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-top: 60px;
-    margin-bottom: 90px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 60px;
+  margin-bottom: 90px;
 
-    p {
-        font-size: 20px;
-        color: rgb(61, 61, 61);
-        font-weight: 400;
-        line-height: 30px;
-    }
+  p {
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+    font-weight: 400;
+    line-height: 30px;
+  }
 
-    .footerItem {
-        display: flex;
-        gap: 25px;
-        font-size: 20px;
-    }
+  .footerItem {
+    display: flex;
+    gap: 25px;
+    font-size: 20px;
+  }
 
-    .footerNav {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-    }
+  .footerNav {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
 
-    .footerNavContainer h6{
-        font-size: 16px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: 600;
-    }
+  .footerNavContainer h6 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
 
-    .footerNavContainer ul {
-        list-style: none;
-        padding-left: 0;
-        line-height: 40px;
-        font-size: 20px;
-    }
+  .footerNavContainer ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 40px;
+    font-size: 20px;
+  }
 
-    .footerBottom {
-        margin-top: 15px;
-    }
+  .footerBottom {
+    margin-top: 15px;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 
-    .navTab {
-        display: flex;
-        }
+  .mainLogo {
+    padding-top: 8px;
+  }
+
+  .navTab {
+    display: flex;
+    flex-direction: row;
+
 
     .fullMenu {
         display: flex;
         flex-direction: row;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        list-style: none;
+    }
+
+      li {
+        font-size: 20px;
+        font-weight: 600;
+
+        .pink {
+            color: #ff3998;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+      }
     }
 
     .navBurger {
-        display: none;
+      display: none;
     }
+  }
+
+  .heroSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    .heroCard {
+        min-width: 50%;
+
+        h1 {
+            font-size: 96px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+    }
+
+    .heroPicture img {
+        min-height: 519px;
+        min-width: 700px;
+        margin-top: 20px;
+    }
+
+  }
+
+  .addSection {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+
+  }
+
+  .shopSection {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    .logoGrid {
+        display: flex;
+        justify-content: space-between;
+        gap: 145px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        .imgNotDisplay {
+            display: flex;
+        }
+    }
+  }
+
 }
