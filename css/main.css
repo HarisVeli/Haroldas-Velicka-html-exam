@@ -83,7 +83,7 @@ a {
   font-weight: 600;
   font-size: 20px;
   border-color: #ff3998;
-  border-width: 3px;
+  border-width: 5px;
   margin-bottom: 60px;
 }
 .heroSection .heroPicture {
@@ -96,8 +96,8 @@ a {
 }
 
 .addSection {
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff3939), to(#ff8139));
-  background-image: linear-gradient(to right, #ff3939, #ff8139);
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF3998), color-stop(#ff3939), color-stop(#ff8139), to(#39FFA0));
+  background-image: linear-gradient(to right, #FF3998, #ff3939, #ff8139, #39FFA0);
   padding-left: 32px;
   padding-top: 75px;
 }
@@ -311,9 +311,11 @@ a {
 }
 .footer .footerBottomLeft {
   margin-top: 15px;
+  color: #555555;
 }
 .footer .footerBottomRight {
   display: none;
+  color: #555555;
 }
 
 @media (min-width: 1400px) {
@@ -398,10 +400,21 @@ a {
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 15px;
+    min-height: 300px;
+  }
+  .addSection h2 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+  .addSection p {
+    margin-bottom: 0px;
   }
   .shopSection {
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .shopSection .shopTabGrid p {
+    margin-bottom: 60px;
   }
   .shopSection .logoGrid {
     display: -webkit-box;
@@ -410,7 +423,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    gap: 145px;
+    gap: 140px;
     margin-top: 100px;
     margin-bottom: 100px;
   }
@@ -452,6 +465,10 @@ a {
   .footer {
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .footer h6 {
+    margin-bottom: 0px;
+    font-weight: 500;
   }
   .footer .footerFlex {
     display: -webkit-box;

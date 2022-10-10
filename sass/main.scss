@@ -73,7 +73,7 @@ a {
     font-weight: 600;
     font-size: 20px;
     border-color: #ff3998;
-    border-width: 3px;
+    border-width: 5px;
     margin-bottom: 60px;
   }
 
@@ -89,7 +89,7 @@ a {
 }
 
 .addSection {
-  background-image: linear-gradient(to right, #ff3939, #ff8139);
+  background-image: linear-gradient(to right, #FF3998, #ff3939, #ff8139, #39FFA0);
   padding-left: 32px;
   padding-top: 75px;
 
@@ -328,10 +328,12 @@ a {
 
   .footerBottomLeft {
     margin-top: 15px;
+    color: #555555;
   }
 
   .footerBottomRight {
     display: none;
+    color: #555555;
   }
 }
 
@@ -410,16 +412,30 @@ a {
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 15px;
+    min-height: 300px;
+
+    h2 {
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
   }
 
   .shopSection {
     margin-left: 50px;
     margin-right: 50px;
 
+    .shopTabGrid p {
+        margin-bottom: 60px;
+    }
+
     .logoGrid {
       display: flex;
       justify-content: space-between;
-      gap: 145px;
+      gap: 140px;
       margin-top: 100px;
       margin-bottom: 100px;
 
@@ -463,6 +479,11 @@ a {
   .footer {
     margin-left: 50px;
     margin-right: 50px;
+
+    h6 {
+        margin-bottom: 0px;
+        font-weight: 500;
+    }
 
     .footerFlex {
         display: flex;
