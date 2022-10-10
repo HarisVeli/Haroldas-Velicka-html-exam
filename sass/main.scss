@@ -326,8 +326,12 @@ a {
     font-size: 20px;
   }
 
-  .footerBottom {
+  .footerBottomLeft {
     margin-top: 15px;
+  }
+
+  .footerBottomRight {
+    display: none;
   }
 }
 
@@ -432,8 +436,7 @@ a {
     margin-left: 50px;
     margin-right: 50px;
 
-   .launchCard {
-
+    .launchCard {
       .launchTitle {
         min-width: 80%;
       }
@@ -454,6 +457,42 @@ a {
       max-width: 700px;
       margin-top: 80px;
       margin-right: 350px;
+    }
+  }
+
+  .footer {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    .footerFlex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footerNav {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+      justify-content: flex-end;
+    }
+
+    .footerBottomRight {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    .footerBottomLeft {
+        margin-top: 0px;
+    }
+
+    .footerBottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
     }
   }
 }
