@@ -314,6 +314,10 @@ a {
 }
 
 @media (min-width: 1400px) {
+  hr {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
   .mainLogo {
     padding-top: 8px;
   }
@@ -411,5 +415,35 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .launchSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .launchSection .launchCard .launchTitle {
+    min-width: 80%;
+  }
+  .launchSection .launchCard h2 {
+    font-size: 96px;
+    margin-bottom: 5px;
+  }
+  .launchSection .launchCard p {
+    margin-bottom: 40px;
+    min-width: 60%;
+  }
+  .launchSection .launchImage img {
+    max-height: 519px;
+    max-width: 700px;
+    margin-top: 80px;
+    margin-right: 350px;
   }
 }/*# sourceMappingURL=main.css.map */

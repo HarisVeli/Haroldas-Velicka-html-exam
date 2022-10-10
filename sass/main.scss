@@ -332,6 +332,10 @@ a {
 }
 
 @media (min-width: 1400px) {
+  hr {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 
   .mainLogo {
     padding-top: 8px;
@@ -341,29 +345,27 @@ a {
     display: flex;
     flex-direction: row;
 
-
     .fullMenu {
-        display: flex;
-        flex-direction: row;
+      display: flex;
+      flex-direction: row;
 
       ul {
         display: flex;
         flex-direction: row;
         gap: 15px;
         list-style: none;
-    }
+      }
 
       li {
         font-size: 20px;
         font-weight: 600;
 
         .pink {
-            color: #ff3998;
+          color: #ff3998;
         }
 
-
         a {
-            text-decoration: none;
+          text-decoration: none;
         }
       }
     }
@@ -381,31 +383,29 @@ a {
     margin-right: 50px;
 
     .heroCard {
-        min-width: 50%;
+      min-width: 50%;
 
-        h1 {
-            font-size: 96px;
-            margin-bottom: 5px;
-        }
+      h1 {
+        font-size: 96px;
+        margin-bottom: 5px;
+      }
 
-        p {
-            margin-bottom: 40px;
-        }
+      p {
+        margin-bottom: 40px;
+      }
     }
 
     .heroPicture img {
-        min-height: 519px;
-        min-width: 700px;
-        margin-top: 20px;
+      min-height: 519px;
+      min-width: 700px;
+      margin-top: 20px;
     }
-
   }
 
   .addSection {
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 15px;
-
   }
 
   .shopSection {
@@ -413,16 +413,47 @@ a {
     margin-right: 50px;
 
     .logoGrid {
-        display: flex;
-        justify-content: space-between;
-        gap: 145px;
-        margin-top: 100px;
-        margin-bottom: 100px;
+      display: flex;
+      justify-content: space-between;
+      gap: 145px;
+      margin-top: 100px;
+      margin-bottom: 100px;
 
-        .imgNotDisplay {
-            display: flex;
-        }
+      .imgNotDisplay {
+        display: flex;
+      }
     }
   }
 
+  .launchSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+   .launchCard {
+
+      .launchTitle {
+        min-width: 80%;
+      }
+
+      h2 {
+        font-size: 96px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin-bottom: 40px;
+        min-width: 60%;
+      }
+    }
+
+    .launchImage img {
+      max-height: 519px;
+      max-width: 700px;
+      margin-top: 80px;
+      margin-right: 350px;
+    }
+  }
 }
